@@ -83,7 +83,7 @@ function draw() {
   
     if(keyDown("space") && trex.y >= 159) {
       trex.velocityY = -12;
-      jumpsound.play();
+      jumpsound.play()
     }
   
     trex.velocityY = trex.velocityY + 0.8
@@ -98,7 +98,7 @@ function draw() {
   
     if(obstaclesGroup.isTouching(trex)){
         gameState = END;
-      dieSound.play();
+      dieSound.play()
     }
         if(score>0 && score%100 === 0){
        checkPointSound.play() 
@@ -197,10 +197,8 @@ function reset(){
   
   trex.changeAnimation("running",trex_running);
   
-  if(localStorage["HighestScore"]<score){
-    localStorage["HighestScore"] = score;
-  }
-  console.log(localStorage["HighestScore"]);
+
+  
   
   score = 0;
   
