@@ -32,7 +32,7 @@ function preload(){
   gameOverImg = loadImage("gameOver.png");
   restartImg = loadImage("restart.png");
   
-  jumpsound=loadsound("jump.mp3")
+  jumpSound=loadSound("jump.mp3")
     dieSound = loadSound("die.mp3")
   checkPointSound = loadSound("checkPoint.mp3")
 }
@@ -83,7 +83,7 @@ function draw() {
   
     if(keyDown("space") && trex.y >= 159) {
       trex.velocityY = -12;
-      jumpsound.play()
+      jumpSound.play()
     }
   
     trex.velocityY = trex.velocityY + 0.8
