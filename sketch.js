@@ -86,7 +86,7 @@ function draw() {
       jumpSound.play()
     }
   
-    trex.velocityY = trex.velocityY + 1
+    trex.velocityY = trex.velocityY + 4
   
     if (ground.x < 0){
       ground.x = ground.width/2;
