@@ -117,6 +117,7 @@ function draw() {
     }
   }
   
+  trex.setCollider("circle",0,0,40)
   
   drawSprites();
 }
